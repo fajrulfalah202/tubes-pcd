@@ -1,0 +1,13 @@
+ if file and allowed_file(file.filename):
+            file.save(secure_filename(file.filename))
+            print("data terupload")
+       
+        
+        n= 1
+        path ="C:/Users/FAJRUL FALAH/Documents/kuliyah/semester 3/citra digital/penajaman citra web/upload/"
+        daftar = os.listdir(path)
+        for filename in daftar:
+            alamat = path +filename
+            des = "target"+ str(n)+".png"
+            os.rename(alamat, des)
+            n =+1
