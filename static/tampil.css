@@ -4,7 +4,7 @@
 .kotak{
     box-sizing: border-box;
 
-    position: absolute;
+    position: fixed;
     width: 1540px;
     height: 245px;
     left: 0px;
@@ -137,9 +137,15 @@
 
 
 }
+.gambari
+{
+   
+}
 .out
 {
+    position: absolute;
     margin: 10%;
+    padding: 10%;
     padding-top:300px ;
-    padding-left: 50%;
+  
 }
