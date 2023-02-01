@@ -20,7 +20,7 @@ app.config["SIMPAN_GAMBAR"]=r"C:\Users\FAJRUL FALAH\Documents\kuliyah\semester 3
 
 @app.route('/')
 def home():
- return render_template("index.html")
+ return render_template("awal.html")
 
 
 @app.route('/succsess', methods=["GET", "POST"])
@@ -29,7 +29,7 @@ def upload():
         if request.files:
             file = request.files['mentah']
            
-        if file and allowed_file(file.filename):
+        if file :
 
             file.save(os.path.join(app.config["SIMPAN_GAMBAR"], file.filename))
             print("data terupload")
@@ -61,7 +61,7 @@ def upload():
 def back():
     if request.method == 'POST':
        os.remove("target1.png") 
-    return render_template("index.html")
+    return render_template("awal.html")
 
 
         

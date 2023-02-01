@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/tampil.css">
+
     <title>succsess</title>
 </head>
 <body>
-    <h1>hasil dari gambarnya </h1>
-
-    <div class="before">
-        sebelum:
-      
+    <div class="kotak">
+        <h1 class="pcd">PCD 2nd GROUP</h1>
     </div>
-
-    <div class="after">
-        setelah:
-        <img width="500px" src="{{ imagee }}">
+    <div class="out">
+        <h3 class="free">setelah diconvert</h3>
+             <img  class="gambari" width="300px" src="{{ imagee }}">
     </div>
-    <form action="/ulang" method="post" enctype="multipart/form-data">
-        <input type="submit" name="ulangi" value="kembali">
-    </form>
+     <form action="/ulang" method="post" enctype="multipart/form-data">
+            <input class="kotak4" type="submit" name="ulangi" value="kembali">
+        </form>
+
+       
 
 </body>
 </html>
